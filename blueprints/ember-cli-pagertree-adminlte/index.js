@@ -1,7 +1,7 @@
 /*jshint node:true*/
 
 module.exports = {
-  description: 'Add bower dependencies for bootstrap and admin-lte to the project',
+  description: 'Add bower dependencies for bootstrap and pagertree-admin-lte to the project',
 
   normalizeEntityName: function() {
     // allows us to run ember -g ember-bootstrap-switch and not blow up
@@ -11,7 +11,7 @@ module.exports = {
 
   afterInstall: function(options) {
     return this.addBowerPackagesToProject([
-      {name: 'pagertree-admin-lte', target: 'pagertree-admin-lte#^3.0.0'}
+      {name: 'pagertree-admin-lte', target: 'pagertree-admin-lte#^3.0.1'}
     ]);
   } // :afterInstall
 

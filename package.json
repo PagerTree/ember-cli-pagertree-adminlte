@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-pagertree-adminlte",
   "description": "An ember-cli addon to import a AdminLTE theme and Bootstrap files.",
-  "version": "1.0.14",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "PagerTree Dev <dev@pagertree.com>",
   "homepage": "https://github.com/PagerTree/ember-cli-pagertree-adminlte",

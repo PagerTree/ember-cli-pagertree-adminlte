@@ -37,17 +37,18 @@ module.exports = {
 
 
       // Other local variables needed
-      var bootstrapPath = target.bowerDirectory + '/AdminLTE/bootstrap';
-      var pluginsPath = target.bowerDirectory + '/AdminLTE/plugins';
-      var adminltePath = target.bowerDirectory + '/AdminLTE/dist';
-      var lessPath = target.bowerDirectory + '/AdminLTE/build/less';
+      var packagePath = '/pagertree-admin-lte';
+      var bootstrapPath = target.bowerDirectory + packagePath + '/bootstrap';
+      var pluginsPath = target.bowerDirectory + packagePath + '/plugins';
+      var adminltePath = target.bowerDirectory + packagePath + '/dist';
+      var lessPath = target.bowerDirectory + packagePath + '/build/less';
       var fontsPath = bootstrapPath + '/fonts';
 
 
       // Make sure bootswatch is available
       if (!fs.existsSync(adminltePath)) {
         throw new Error(
-          this.name + ': AdminLTE is not available from bower (' + adminltePath + '), ' +
+          this.name + ': PagerTree AdminLTE is not available from bower (' + adminltePath + '), ' +
           'install into your project by running `bower install admin-lte --save`'
         );
       }

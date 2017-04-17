@@ -11,7 +11,7 @@ module.exports = {
 
   afterInstall: function(options) {
     return this.addBowerPackagesToProject([
-      {name: 'AdminLTE', target: 'pagertree-admin-lte#^3.0.0'}
+      {name: 'pagertree-admin-lte', target: 'pagertree-admin-lte#^3.0.0'}
     ]);
   } // :afterInstall
 
